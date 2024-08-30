@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked-In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    
+    <nav class="navbar">
+
+        <div class="navbar-left">
+            <a href="index.html" class="logo"> <img src="./images/logo.png" alt="LinkedIn Logo"></a>
+            
+        <div class="search-bar-wrapper">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+
+        </div>
+
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="./images/home.png" alt="Home"> <span>Home</span></a></li> 
+                <li><a href="#"><img src="./images/network.png" alt="My Network"> <span>My Network</span></a></li> 
+                <li><a href="#"><img src="./images/jobs.png" alt="Jobs"> <span>Jobs</span></a></li> 
+                <li><a href="#"><img src="./images/message.png" alt="Messaging"> <span>Messaging</span></a></li> 
+                <li><a href="#"><img src="./images/notification.png" alt="Notifications"> <span>Notifications</span></a></li>
+                <li><a href="#" onclick="toggleMenu()"><img class="nav-profile-image" src="./images/user-1.png" alt="User Profile"><span>Me</span> </a></li>
+
+            </ul>
+        </div>
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-1.png" alt="">
+                    <div>
+                        <h5>Varun Thapliyal</h5>
+                        <h6>Web Developer at Amazon</h6>
+                    </div>
+                </div>
+                <div class="view-profile">
+                    <a href="">View profile</a>
+
+                </div>
+
+                <hr>
+                <div class="account-info">
+                    <h3>Account</h3>
+                    <a href="">Settings & Privacy</a>
+                    <a href="">Help</a>
+                    <a href="">Launguage</a>
+                </div>
+                <hr>
+                <div class="manage">
+                    <h3>Manage</h3>
+                    <a href="">Post & Activity</a>
+                    <a href="">Job posting activity</a>
+                </div>
+                <hr>
+                <div class="sign-out">
+                    <a href="">Sign out</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-right">
+            <ul>
+           <li><a href="#"><img src="./images/menu.png" alt=""></a><span>For Business</span></li>
+        </ul>
+        </div>
+
+    </nav>
+<!-- ------------------navbar-close------------------------- -->
+<div class="container2">
+    <div class="profile-main">
+        <div class="profile-container">
+            <img class="cover-pic" src="./images/cover-pic.png" height="220px" width="100%">
+            <div class="profile-container-inner">
+                <img src="./images/user-1.png" class="Profile-pic">
+                <h1>Varun Thapliyal</h1>
+                <b>Developer at amazon</b>
+                <p>San Francisco, United States &middot;<a href="#">Contact info</a> </p>
+                <h2>100 connections</h2>
+            </div>
+            <div class="button">
+                <button>Open to</button>
+                <button>Add profile section</button>
+                <button>Enhance profile</button>
+                <button>More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------profilesidebar-------------- -->
+    <div class="profile-sidebar">
+
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
