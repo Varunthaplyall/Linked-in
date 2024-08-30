@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     
@@ -15,27 +16,407 @@
 
         <div class="navbar-left">
             <a href="index.html" class="logo"> <img src="./images/logo.png" alt="LinkedIn Logo"></a>
+            
+        <div class="search-bar-wrapper">
             <div class="search-bar">
                 <input type="text" placeholder="Search">
             </div>
-            
+        </div>
+
         </div>
 
         <div class="navbar-center">
             <ul>
-                <li><a href="#"><img src="./images/home.png" alt="Home"> <span>Home</span></a></li> 
+                <li><a href="#" class="active-link"><img src="./images/home.png" alt="Home"> <span>Home</span></a></li> 
                 <li><a href="#"><img src="./images/network.png" alt="My Network"> <span>My Network</span></a></li> 
                 <li><a href="#"><img src="./images/jobs.png" alt="Jobs"> <span>Jobs</span></a></li> 
                 <li><a href="#"><img src="./images/message.png" alt="Messaging"> <span>Messaging</span></a></li> 
                 <li><a href="#"><img src="./images/notification.png" alt="Notifications"> <span>Notifications</span></a></li>
+                <li><a href="#" onclick="toggleMenu()"><img class="nav-profile-image" src="./images/user-1.png" alt="User Profile"><span>Me</span> </a></li>
+
             </ul>
+        </div>
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-1.png" alt="">
+                    <div>
+                        <h5>Varun Thapliyal</h5>
+                        <h6>Web Developer at Amazon</h6>
+                    </div>
+                </div>
+                <div class="view-profile">
+                    <a href="">View profile</a>
+
+                </div>
+
+                <hr>
+                <div class="account-info">
+                    <h3>Account</h3>
+                    <a href="">Settings & Privacy</a>
+                    <a href="">Help</a>
+                    <a href="">Launguage</a>
+                </div>
+                <hr>
+                <div class="manage">
+                    <h3>Manage</h3>
+                    <a href="">Post & Activity</a>
+                    <a href="">Job posting activity</a>
+                </div>
+                <hr>
+                <div class="sign-out">
+                    <a href="">Sign out</a>
+                </div>
+            </div>
         </div>
 
         <div class="navbar-right">
-            <img class="nav-profile-image" src="./images/user-1.png" alt="User Profile">
+            <ul>
+           <li><a href="#"><img src="./images/menu.png" alt=""></a><span>For Business</span></li>
+        </ul>
         </div>
 
     </nav>
-    
+<!-- ------------------navbar-close------------------------- -->
+
+
+    <div class="container">
+<!-- --------------------left-container------------------------ -->
+
+    <div class="left-container">                                                
+        <div class="sidebar-profile-box">                                           
+                <img src="./images/cover-pic.png" width="100%" alt="Profile_pic">   
+            <div class="sidebar-profile-info">                                                  
+                    <img src="./images/user-1.png">                                                 
+                    <h1>Varun Thapliyal</h1>                                    
+                    <h3>Web Developer at Amazon</h3>                                                
+                </div>  
+                <div class="wrapper-connections">
+                    <div class="connections">
+                        <h2>connections  <span>102</span></h2>
+                        <h3>Grow your connections  </h3>
+                    </div> 
+                    <div class="premium">
+                        <h4>Achive your career goals </h4>
+                        <img src="./images/premium.png" alt=""> <h2>Don’t miss: Premium for ₹0</h2>
+                    </div>
+                </div>                                                   
+                <div class="saved">
+                    <img src="./images/items.png" alt=""> <h2>saved items</h2>
+                </div>
+        </div>    
+        <div class="side-bar-profile2">
+           <ul>
+               <li>Group</li>
+               <li>Events </li> <button>+</button>
+               <li>Followed Hashtags</li>
+           </ul>
+           <div class="discover">
+            <h1>Discover more</h1>
+           </div>
+       </div>                                         
+    </div>                                                                  
+
+<!-- -------------------------main-container------------------------- -->
+
+        <div class="main-container">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="./images/user-1.png" alt="">
+                    <input type="text" placeholder="Start a post">
+                </div>
+                <div class="create-post-links">
+                    <li><img src="./images/gallery.png" alt=""> Media  </li>   
+                    <li><img src="./images/calendar.png" alt=""> Events  </li>  
+                    <li><img src="./images/article.png" alt=""> Artical  </li>   
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr>
+                <p>sort-by: <span class="sort-by-name">Top</span><span><img src="./images/down-arrow.png" alt=""></span></p>
+            </div>
+
+
+            <!-- --------------------------------------------- -->
+            <div class="post">
+                <div class="post-close">
+                <img src="./images/3dot.png" alt="">
+                <img src="./images/close.png" alt="">
+                </div>
+                <div class="post-author">
+                    <img src="./images/user-2.png">
+                    <div>
+                        <h1>Duke Dennis</h1>
+                        <small>Customer Support Specialist | Linkedin Outreach Expert </small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est non quae ullam tempore soluta maiores qui, vero et perspiciatis corporis, doloribus placeat nulla quod esse distinctio cupiditate a, earum ducimus assumenda porro dolore. Pariatur voluptas ducimus rerum rem consequuntur odio eligendi, minus inventore quia excepturi, culpa reiciendis non, sint velit.</p>
+                <img src="./images/post-image-1.png" width="100%">
+
+
+                <div class="post-stats">
+                    <div>
+                        <img  src="./images/thumbsup.png" alt="">
+                        <img src="./images/love.png" alt="">
+                        <img src="./images/clap.png" alt="">
+                        <span class="liked-user">Richard Daniel and 50 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 repost</span>
+                    </div>
+
+                </div>
+
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <img src="./images/like (1).png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment (1).png" alt="">
+                        <span>Comments</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/retweet.png" alt="">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send (1).png" alt="">
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------------------------- -->
+            <div class="post">
+                <div class="post-close">
+                <img src="./images/3dot.png" alt="">
+                <img src="./images/close.png" alt="">
+                </div>
+                <div class="post-author">
+                    <img src="./images/user-4.png">
+                    <div>
+                        <h1>cale Willum</h1>
+                        <small>Hr Associate | Linkedin 
+          Outreach Expert </small>
+                        <small>1 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+          elit. Est non quae ullam tempore soluta maiores qui, 
+          vero et perspiciatis corporis, doloribus placeat nulla 
+          quod esse distinctio cupiditate a, earum ducimus 
+          assumenda porro dolore. Pariatur voluptas ducimus rerum 
+          rem consequuntur odio eligendi, minus inventore quia 
+          excepturi, culpa reiciendis non, sint velit.</p>
+                <img src="./images/post-image-2.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img  src="./images/thumbsup.png" alt="">
+                        <img src="./images/love.png" alt="">
+                        <img src="./images/clap.png" alt="">
+                        <span class="liked-user">Wasim Malik and 20 
+          others</span>
+                    </div>
+                    <div>
+                        <span>78 comments &middot; 10 repost</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <img src="./images/like (1).png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment (1).png" alt="">
+                        <span>Comments</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/retweet.png" alt="">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send (1).png" alt="">
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------------------------------------------- -->
+            <div class="post">
+                <div class="post-close">
+                <img src="./images/3dot.png" alt="">
+                <img src="./images/close.png" alt="">
+                </div>
+                <div class="post-author">
+                    <img src="./images/user-3.png">
+                    <div>
+                        <h1>Sunita</h1>
+                        <small>Astrophysician | R&D expert</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+          elit. Est non quae ullam tempore soluta maiores qui, 
+          vero et perspiciatis corporis, doloribus placeat nulla 
+          quod esse distinctio cupiditate a, earum ducimus 
+          assumenda porro dolore. Pariatur voluptas ducimus rerum 
+          rem consequuntur odio eligendi, minus inventore quia 
+          excepturi, culpa reiciendis non, sint velit.</p>
+                <img src="./images/post-image-3.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img  src="./images/thumbsup.png" alt="">
+                        <img src="./images/love.png" alt="">
+                        <img src="./images/clap.png" alt="">
+                        <span class="liked-user">Lara Road and 100 
+          others</span>
+                    </div>
+                    <div>
+                        <span>360 comments &middot; 123 repost</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <img src="./images/like (1).png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment (1).png" alt="">
+                        <span>Comments</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/retweet.png" alt="">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send (1).png" alt="">
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------------------------------------- -->
+            <div class="post">
+                <div class="post-close">
+                <img src="./images/3dot.png" alt="">
+                <img src="./images/close.png" alt="">
+                </div>
+                <div class="post-author">
+                    <img src="./images/user-5.png">
+                    <div>
+                        <h1>Danial Paul</h1>
+                        <small>Customer Support Specialist | Linkedin 
+          Outreach Expert </small>
+                        <small>12 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+          elit. Est non quae ullam tempore soluta maiores qui, 
+          vero et perspiciatis corporis, doloribus placeat nulla 
+          quod esse distinctio cupiditate a, earum ducimus 
+          assumenda porro dolore. Pariatur voluptas ducimus rerum 
+          rem consequuntur odio eligendi, minus inventore quia 
+          excepturi, culpa reiciendis non, sint velit.</p>
+                <img src="./images/post-image-4.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img  src="./images/thumbsup.png" alt="">
+                        <img src="./images/love.png" alt="">
+                        <img src="./images/clap.png" alt="">
+                        <span class="liked-user">Cbum and 50 
+          others</span>
+                    </div>
+                    <div>
+                        <span>96 comments &middot; 50 repost</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <img src="./images/like (1).png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/comment (1).png" alt="">
+                        <span>Comments</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/retweet.png" alt="">
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./images/send (1).png" alt="">
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- ------------------------------right-container--------------------------->
+
+        <div class="right-container">
+
+            <div class="sidebar-new">
+                <img src="./images/information-button.png" class="info-icon">
+                <h3>LinkedIn News</h3>
+                <span class="stories">Top Stories</span><br>
+                
+                <a href="">Telegram founder arrested in France</a>
+                <span>1 day ago &middot; 12,425 viewrs</span>
+
+                <a href="">Building a career in sports</a>
+                <span>1 day ago &middot; 13,255 viewrs</span>
+
+                <a href="">Smaller F&B brands go big</a>
+                <span>1 day ago &middot; 9,545 viewrs</span>
+
+                <a href="">Banks battle high attrition</a>
+                <span>1 day ago &middot; 3,3556 viewrs</span>
+
+                <a href="">Benefits of certificate courses</a>
+                <span>1 day ago &middot; 1000 viewrs</span>
+
+                <a href="">Cricketers bat for startups</a>
+                <span>1 day ago &middot; 4520 viewrs</span>
+
+                <br>
+                <button class="read-more">Show more <img src="./images/down-arrow.png" alt=""></button>
+            </div>
+
+            <div class="sidebar-add">
+                <small>ad &middot;&middot;&middot;</small>
+                <p>Master the five principles of web development </p>
+                <div>
+                    <img src="./images/user-2.png" alt="">
+                    <img src="./images/mi-logo.png" alt="">
+                </div>
+                <b>Brand and demand in Xiaomi</b>
+                <a href="#" class="learn-more">Learn more</a>
+            </div>
+
+            <div class="sidebar-links">
+                <a href="">About</a>
+                <a href="">Accessibility</a>
+                <a href="">Help Center</a>
+                <a href="">Privacy & Terms 
+                </a>
+                <a href="">Ad Choices</a>
+                <a href="">Advertising</a>
+                <a href="">Business Services </a>
+                <a href="">Get the LinkedIn app
+                </a>
+                <a href="">More</a>
+                <div class="copyright">
+                    
+                <img src="https://static.licdn.com/aero-v1/sc/h/aahlc8ivbnmk0t3eyz8as5gvr" alt="">
+                <p> LinkedIn Corporation © 2024</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
 </body>
 </html>
